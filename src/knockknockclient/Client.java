@@ -18,14 +18,14 @@ public class Client {
             String wordFromUser;
 
             while ((meaningFromServer = in.readLine()) != null) {
-                System.out.print("The Word: " + meaningFromServer);
+                System.out.print(meaningFromServer);
                 if (meaningFromServer.equals("Bye."))
                     break;
                 
                 wordFromUser = stdIn.readLine();
                 if (wordFromUser != null) {
-                    System.out.println("Means: " + wordFromUser);
-                    out.println(wordFromUser);
+                    //System.out.println("Means: " + wordFromUser);
+                   out.println('\n'+wordFromUser);
                 }
             }
         }
